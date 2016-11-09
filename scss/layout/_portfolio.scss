@@ -1,0 +1,30 @@
+/* Portfolio Styles
+   ========================================================================== */
+
+#portfolio {
+  @extend %center;
+
+  h2 {
+    @extend %text-uppercase;
+  }
+}
+
+.portfolio-item {
+  @extend %margin-bottom;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  i {
+    font-size: 2em;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  img {
+    margin-bottom: 0.3125rem;
+  }
+}

@@ -16,7 +16,7 @@ body {
 
 header {
   @extend %center;
-  margin-top: 1em;
+  margin-top   : 1em;
   margin-bottom: 3.75rem;
 }
 
@@ -30,4 +30,17 @@ a {
   text-decoration: none;
   color          : $color-secondary;
   display        : block;
+}
+
+section {
+  @extend %margin-bottom;
+}
+
+h2 {
+  @extend %margin-bottom;
+  margin-top   : 0;
+}
+
+img {
+  max-width: 100%;
 }

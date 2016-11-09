@@ -38,7 +38,8 @@ section {
 
 h2 {
   @extend %margin-bottom;
-  margin-top   : 0;
+  @extend %text-uppercase;
+  margin-top: 0;
 }
 
 img {

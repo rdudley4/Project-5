@@ -1,14 +1,14 @@
 /* Extended Styles
    ========================================================================== */
-#student-name, #main-nav li, #portfolio h2 {
+h2, #student-name, #main-nav li, #to-top {
   text-transform: uppercase;
 }
 
-header, #about-me, #portfolio {
+header, #about-me, #portfolio, #contact {
   text-align: center;
 }
 
-section, h2, .portfolio-item {
+section, h2, .portfolio-item, #contact a:last-of-type {
   margin-bottom: 3.125rem;
 }
 
@@ -104,6 +104,30 @@ img {
 }
 .portfolio-item img {
   margin-bottom: 0.3125rem;
+}
+
+/* Contact Styles
+   ========================================================================== */
+#contact {
+  border-bottom: 1px solid #4a4a4a;
+  margin-bottom: 0;
+}
+#contact a {
+  margin-bottom: 0.625rem;
+}
+#contact p {
+  margin-bottom: 2.1875rem;
+}
+#contact h2 {
+  margin-bottom: 25px;
+}
+
+/* Footer Styles
+   ========================================================================== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,10 +3,6 @@
 
 #portfolio {
   @extend %center;
-
-  h2 {
-    @extend %text-uppercase;
-  }
 }
 
 .portfolio-item {

@@ -6,8 +6,10 @@
 }
 
 body {
-  line-height: 1.5;
-  font-family: $stack-roboto;
+  line-height     : 1.5;
+  font-family     : $stack-montserrat;
+  background-color: $color-primary;
+  color           : $color-secondary;
 }
 
 header {
@@ -21,7 +23,8 @@ ul {
   padding   : 0;
 }
 
-h1 {
-  margin-top : 0;
-  font-family: $stack-roboto-condensed;
+a {
+  text-decoration: none;
+  color: $color-secondary;
+  display: block;
 }

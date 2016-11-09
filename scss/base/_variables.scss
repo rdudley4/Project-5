@@ -1,11 +1,23 @@
 // Descriptive Color Variables
 
+$alabaster       : #e8e8e8;
+$tundora         : #4a4a4a;
+$cornflower-blue : #4e8ef7;
+$white           : #fff;
 
 // Functional Color Variables
 
+$color-primary   : $alabaster;
+$color-secondary : $tundora;
+$color-tertiary  : $white;
+$color-highlight : $cornflower-blue;
 
 // Font Stacks
 
-$stack-sans-serif      : Helvetica, Arial, sans-serif;
-$stack-roboto          : Roboto, $stack-sans-serif;
-$stack-roboto-condensed: "Roboto Condensed", $stack-sans-serif;
+$stack-sans-serif: Helvetica, Arial, sans-serif;
+$stack-montserrat: "Montserrat", $stack-sans-serif;
+
+// Media Query Breakpoints
+
+$brk-tablet      : "(min-width: 769px)";
+$brk-desktop     : "(min-width: 1025px)";

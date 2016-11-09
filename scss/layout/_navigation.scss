@@ -1,0 +1,28 @@
+/* Navigation Styles
+   ========================================================================== */
+
+#student-name {
+  @extend %text-uppercase;
+  margin-top    : 0;
+}
+
+#main-nav {
+  width : 90%;
+  margin: auto;
+
+  li {
+    @extend %text-uppercase;
+    margin-bottom   : 0.46875rem;
+    background-color: $color-tertiary;
+  }
+
+  a {
+    @include transition-all();
+    padding: 15px 0;
+
+    &:hover {
+      background-color: $color-highlight;
+      color: $color-tertiary;
+    }
+  }
+}

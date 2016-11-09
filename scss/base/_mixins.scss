@@ -1,0 +1,6 @@
+/* Mixins
+   ========================================================================== */
+
+@mixin transition-all($time: .4s) {
+  transition: all $time ease;
+}

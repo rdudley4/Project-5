@@ -1,0 +1,23 @@
+/* About Me Styles
+   ========================================================================== */
+
+#about-me {
+  @extend %center;
+}
+
+#profile-photo {
+  width: 152.15px; // 15% smaller than original on mobile.
+}
+
+#description {
+  margin-top: -6px;
+
+  &::before {
+    content         : "";
+    display         : block;
+    max-width       : 290px;
+    margin          : 0 auto 1rem;
+    height          : 6px;
+    background-color: $color-highlight;
+  }
+}

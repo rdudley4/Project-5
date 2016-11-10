@@ -7,19 +7,36 @@
 }
 
 #main-nav {
-  li {
-    @extend %text-uppercase;
-    margin-bottom   : 0.46875rem;
-    background-color: $color-tertiary;
-  }
-
   a {
+    @extend %text-uppercase;
     @include transition-all();
-    padding: 15px 0;
+    margin-bottom   : 0.46875rem;
+    padding         : 15px 0;
+    background-color: $color-tertiary;
 
     &:hover {
       background-color: $color-highlight;
       color           : $color-tertiary;
+    }
+  }
+  @media #{$brk-tablet} {
+    display: flex;
+
+    a {
+      background-color: transparent;
+      margin-right    : 2rem;
+      margin-bottom   : 0;
+
+      &:hover {
+        background-color: transparent;
+        color           : $color-highlight;
+      }
+    }
+
+    li:last-of-type {
+      a {
+        margin-right: 0;
+      }
     }
   }
 }

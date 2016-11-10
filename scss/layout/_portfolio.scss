@@ -3,10 +3,19 @@
 
 #portfolio {
   @extend %center;
+  @media #{$brk-tablet} {
+    display  : flex;
+    flex-wrap: wrap;
+
+    h2 {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .portfolio-item {
   @extend %margin-bottom;
+  @include transition-all(.3s, ease-in-out);
 
   p {
     margin-bottom: 0;
@@ -22,5 +31,20 @@
 
   img {
     margin-bottom: 0.3125rem;
+  }
+  @media #{$brk-tablet} {
+    flex   : 1 50%;
+    padding: 10px;
+  }
+}
+
+.item {
+  @media #{$brk-tablet} {
+    @include item-hover(1, $marketing);
+    @include item-hover(2, $search);
+    @include item-hover(3, $travel);
+    @include item-hover(4, $map);
+    @include item-hover(5, $gallery);
+    @include item-hover(6, $calculator);
   }
 }

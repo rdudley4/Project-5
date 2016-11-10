@@ -12,6 +12,14 @@ $color-secondary : $tundora;
 $color-tertiary  : $white;
 $color-highlight : $cornflower-blue;
 
+// Portfolio Item Color Variables
+$marketing       : #36acd0;
+$search          : #e0ab26;
+$travel          : #2572aa;
+$map             : #52bab4;
+$gallery         : #675a85;
+$calculator      : #62717e;
+
 // Font Stacks
 
 $stack-sans-serif: Helvetica, Arial, sans-serif;
@@ -24,4 +32,4 @@ $brk-desktop     : "(min-width: 1025px)";
 
 // Box Shadows
 
-$shdw-bottom: 0 5px 5px -5px #333;
+$shdw-bottom     : 0 5px 5px -5px #333;

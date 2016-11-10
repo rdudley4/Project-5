@@ -146,6 +146,19 @@ img {
 
 /* Portfolio Styles
    ========================================================================== */
+@media (min-width: 769px) {
+  #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #portfolio h2 {
+    flex-basis: 100%;
+  }
+}
+
+.portfolio-item {
+  transition: all 0.3s ease-in-out;
+}
 .portfolio-item p {
   margin-bottom: 0;
 }
@@ -157,6 +170,39 @@ img {
 }
 .portfolio-item img {
   margin-bottom: 0.3125rem;
+}
+@media (min-width: 769px) {
+  .portfolio-item {
+    flex: 1 50%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .item1:hover {
+    background-color: #36acd0;
+    color: #fff;
+  }
+  .item2:hover {
+    background-color: #e0ab26;
+    color: #fff;
+  }
+  .item3:hover {
+    background-color: #2572aa;
+    color: #fff;
+  }
+  .item4:hover {
+    background-color: #52bab4;
+    color: #fff;
+  }
+  .item5:hover {
+    background-color: #675a85;
+    color: #fff;
+  }
+  .item6:hover {
+    background-color: #62717e;
+    color: #fff;
+  }
 }
 
 /* Contact Styles

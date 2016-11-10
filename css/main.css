@@ -215,7 +215,14 @@ img {
   margin-bottom: 0.625rem;
 }
 #contact p {
-  margin-bottom: 2.1875rem;
+  width: 90%;
+  max-width: 620px;
+  margin: 0 auto 2.1875rem;
+}
+@media (min-width: 769px) {
+  #contact p {
+    width: 75%;
+  }
 }
 #contact h2 {
   margin-bottom: 25px;

@@ -2,11 +2,33 @@
    ========================================================================== */
 
 footer {
-  display        : flex;
-  justify-content: space-between;
-  margin         : 25px 0;
+  display  : flex;
+  margin   : 25px 0;
+  font-size: $text-small;
 }
 
 #to-top {
   @extend %text-uppercase;
+  margin-left: auto;
+  @media #{$brk-tablet} {
+    display: none;
+  }
+}
+
+#footer-nav {
+  @extend %text-uppercase;
+  display    : none;
+  margin-left: auto;
+
+  a {
+    display: inline-block;
+  }
+  @media #{$brk-tablet} {
+    display: block;
+  }
+}
+
+#foot-home,
+#foot-portfolio {
+  margin-right: 15px;
 }

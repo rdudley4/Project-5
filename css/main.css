@@ -1,6 +1,6 @@
 /* Extended Styles
    ========================================================================== */
-h2, #student-name, #main-nav a, #to-top {
+h2, #student-name, #main-nav a, #to-top, #footer-nav {
   text-transform: uppercase;
 }
 
@@ -73,6 +73,7 @@ img {
 
 #main-nav a {
   transition: all 0.4s ease;
+  display: block;
   margin-bottom: 0.46875rem;
   padding: 15px 0;
   background-color: #fff;
@@ -232,8 +233,35 @@ img {
    ========================================================================== */
 footer {
   display: flex;
-  justify-content: space-between;
   margin: 25px 0;
+  font-size: 0.875rem;
+}
+
+#to-top {
+  margin-left: auto;
+}
+@media (min-width: 769px) {
+  #to-top {
+    display: none;
+  }
+}
+
+#footer-nav {
+  display: none;
+  margin-left: auto;
+}
+#footer-nav a {
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  #footer-nav {
+    display: block;
+  }
+}
+
+#foot-home,
+#foot-portfolio {
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

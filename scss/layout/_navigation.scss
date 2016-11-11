@@ -4,10 +4,13 @@
 #student-name {
   @extend %text-uppercase;
   margin-top: 0;
+  @media #{$brk-desktop} {
+    margin-bottom: 0;
+  }
 }
 
 #main-nav {
-  a {
+  li {
     @extend %text-uppercase;
     @include transition-all();
     margin-bottom   : 0.46875rem;
@@ -17,12 +20,13 @@
     &:hover {
       background-color: $color-highlight;
       color           : $color-tertiary;
+      cursor          : pointer;
     }
   }
   @media #{$brk-tablet} {
     display: flex;
 
-    a {
+    li {
       background-color: transparent;
       margin-right    : 2rem;
       margin-bottom   : 0;
@@ -31,12 +35,28 @@
         background-color: transparent;
         color           : $color-highlight;
       }
-    }
 
-    li:last-of-type {
-      a {
+      &:last-of-type {
         margin-right: 0;
       }
     }
+  }
+  @media #{$brk-desktop} {
+    li {
+      padding: 0;
+    }
+  }
+}
+
+#nav-toggle {
+  @include transition-all();
+  font-size: 1.25rem;
+  padding  : 5px;
+
+  &:hover {
+    @extend %nav-hover;
+  }
+  @media #{$brk-tablet} {
+    display: none;
   }
 }

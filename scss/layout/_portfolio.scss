@@ -36,6 +36,10 @@
     flex   : 1 50%;
     padding: 10px;
   }
+
+  @media #{$brk-desktop} {
+    flex-basis: 33%;
+  }
 }
 
 .item {

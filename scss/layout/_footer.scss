@@ -9,7 +9,13 @@ footer {
 
 #to-top {
   @extend %text-uppercase;
+  @include transition-all();
   margin-left: auto;
+
+  &:hover {
+    @extend %nav-hover;
+  }
+
   @media #{$brk-tablet} {
     display: none;
   }
@@ -19,12 +25,16 @@ footer {
   @extend %text-uppercase;
   display    : none;
   margin-left: auto;
-
-  a {
-    display: inline-block;
-  }
   @media #{$brk-tablet} {
     display: block;
+  }
+
+  span {
+    @include transition-all();
+
+    &:hover {
+      @extend %nav-hover;
+    }
   }
 }
 

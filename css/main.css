@@ -1,6 +1,6 @@
 /* Extended Styles
    ========================================================================== */
-h2, #student-name, #main-nav a, #to-top, #footer-nav {
+h2, #student-name, #main-nav li, #to-top, #footer-nav {
   text-transform: uppercase;
 }
 
@@ -10,6 +10,11 @@ header, #about-me, #portfolio, #contact {
 
 section, h2, .portfolio-item, #contact a:last-of-type {
   margin-bottom: 3.125rem;
+}
+
+#nav-toggle:hover, #to-top:hover, #footer-nav span:hover {
+  color: #4e8ef7;
+  cursor: pointer;
 }
 
 /* Mixins
@@ -38,6 +43,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (min-width: 1025px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -70,38 +81,64 @@ img {
 #student-name {
   margin-top: 0;
 }
+@media (min-width: 1025px) {
+  #student-name {
+    margin-bottom: 0;
+  }
+}
 
-#main-nav a {
+#main-nav li {
   transition: all 0.4s ease;
-  display: block;
   margin-bottom: 0.46875rem;
   padding: 15px 0;
   background-color: #fff;
 }
-#main-nav a:hover {
+#main-nav li:hover {
   background-color: #4e8ef7;
   color: #fff;
+  cursor: pointer;
 }
 @media (min-width: 769px) {
   #main-nav {
     display: flex;
   }
-  #main-nav a {
+  #main-nav li {
     background-color: transparent;
     margin-right: 2rem;
     margin-bottom: 0;
   }
-  #main-nav a:hover {
+  #main-nav li:hover {
     background-color: transparent;
     color: #4e8ef7;
   }
-  #main-nav li:last-of-type a {
+  #main-nav li:last-of-type {
     margin-right: 0;
+  }
+}
+@media (min-width: 1025px) {
+  #main-nav li {
+    padding: 0;
+  }
+}
+
+#nav-toggle {
+  transition: all 0.4s ease;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+@media (min-width: 769px) {
+  #nav-toggle {
+    display: none;
   }
 }
 
 /* About Me Styles
    ========================================================================== */
+#about-me {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 769px) {
   #about-me {
     display: flex;
@@ -178,6 +215,11 @@ img {
     padding: 10px;
   }
 }
+@media (min-width: 1025px) {
+  .portfolio-item {
+    flex-basis: 33%;
+  }
+}
 
 @media (min-width: 769px) {
   .item1:hover {
@@ -238,6 +280,7 @@ footer {
 }
 
 #to-top {
+  transition: all 0.4s ease;
   margin-left: auto;
 }
 @media (min-width: 769px) {
@@ -250,13 +293,13 @@ footer {
   display: none;
   margin-left: auto;
 }
-#footer-nav a {
-  display: inline-block;
-}
 @media (min-width: 769px) {
   #footer-nav {
     display: block;
   }
+}
+#footer-nav span {
+  transition: all 0.4s ease;
 }
 
 #foot-home,

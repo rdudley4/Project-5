@@ -41,11 +41,11 @@ navContact.onclick = function() {
 // Footer Nav Smooth Scrolling
 
 toTop.onclick = function() {
-  goToElement("student-name");
+  goToElement("page-top");
 }
 
 footNavHome.onclick = function() {
-  goToElement("student-name");
+  goToElement("page-top");
 }
 
 footNavPortfolio.onclick = function() {

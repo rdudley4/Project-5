@@ -40,5 +40,5 @@ footer {
 
 #foot-home,
 #foot-portfolio {
-  margin-right: 15px;
+  @include layout-calc(15, margin, right);
 }

@@ -10,7 +10,7 @@
 }
 
 %margin-bottom {
-  margin-bottom: 3.125rem;
+  @include layout-calc(50, margin, bottom);
 }
 
 %nav-hover {

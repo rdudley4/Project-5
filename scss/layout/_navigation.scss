@@ -13,7 +13,7 @@
   li {
     @extend %text-uppercase;
     @include transition-all();
-    margin-bottom   : 0.46875rem;
+    @include layout-calc(7.5, margin, bottom);
     padding         : 15px 0;
     background-color: $color-tertiary;
 
@@ -27,9 +27,9 @@
     display: flex;
 
     li {
-      background-color: transparent;
-      margin-right    : 2rem;
+      @include layout-calc(32, margin, right);
       margin-bottom   : 0;
+      background-color: transparent;
 
       &:hover {
         background-color: transparent;
@@ -50,8 +50,8 @@
 
 #nav-toggle {
   @include transition-all();
-  font-size: 1.25rem;
-  padding  : 5px;
+  @include layout-calc(5, padding);
+  font-size: $icon-small;
 
   &:hover {
     @extend %nav-hover;

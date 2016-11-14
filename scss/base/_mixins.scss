@@ -10,3 +10,11 @@
     color           : $color-tertiary;
   }
 }
+
+@mixin layout-calc($px, $type, $direction: null) {
+  @if ($direction) {
+    #{$type}-#{$direction}: unquote("#{$px / 16}rem");
+  } @else {
+    #{$type}: unquote("#{$px / 16}rem");
+  }
+}

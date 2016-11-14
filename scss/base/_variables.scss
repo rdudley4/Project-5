@@ -15,6 +15,7 @@ $color-highlight : $cornflower-blue;
 $color-skills    : $mine-shaft;
 
 // Portfolio Item Color Variables
+
 $scooter         : #36acd0;
 $golden-grass    : #e0ab26;
 $jelly-bean      : #2572aa;
@@ -23,7 +24,7 @@ $dolphin         : #675a85;
 $nevada          : #62717e;
 $vin-rouge       : #903c53;
 
-// Skills Color Variables
+// Skill Color Variables
 
 $css3            : #2162af;
 $html5           : #e44f26;
@@ -36,8 +37,11 @@ $stack-montserrat: "Montserrat", $stack-sans-serif;
 
 // Font Sizes
 $text-small      : 0.875rem; // 14px
-$text-default    : 1rem; // 16px
-$text-large      : 1.5rem; // 24px
+
+// Icon Sizes
+$icon-small      : 1.25rem;
+$icon-medium     : 2rem;
+$icon-large      : 3rem;
 
 // Media Query Breakpoints
 

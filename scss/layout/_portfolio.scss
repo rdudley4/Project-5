@@ -22,7 +22,7 @@
   }
 
   i {
-    font-size: 2em;
+    font-size: $icon-medium;
   }
 
   h3 {
@@ -30,11 +30,11 @@
   }
 
   img {
-    margin-bottom: 0.3125rem;
+    @include layout-calc(5, margin, bottom );
   }
   @media #{$brk-tablet} {
+    @include layout-calc(10, padding);
     flex   : 1 50%;
-    padding: 10px;
   }
   @media #{$brk-desktop} {
     flex-basis: 33.3333%;

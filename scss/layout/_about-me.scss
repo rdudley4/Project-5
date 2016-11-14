@@ -20,7 +20,7 @@
 }
 
 #description {
-  margin-top: -6px;
+  @include layout-calc(-6, margin, top);
   @media #{$brk-tablet} {
     width        : 65%;
     align-self   : center;

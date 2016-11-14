@@ -13,7 +13,8 @@
 }
 
 #profile-photo {
-  width: 152.15px; // 15% smaller than original on mobile.
+  width : 152.15px;
+  height: 210.8px;
   @media #{$brk-tablet} {
     box-shadow: $shdw-bottom;
   }

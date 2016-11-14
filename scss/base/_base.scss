@@ -12,6 +12,10 @@ body {
   font-family     : $stack-montserrat;
   background-color: $color-primary;
   color           : $color-secondary;
+
+  @media #{$brk-desktop} {
+    width: 80%;
+  }
 }
 
 header {

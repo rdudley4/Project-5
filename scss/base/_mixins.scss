@@ -1,9 +1,9 @@
 /* Mixins
    ========================================================================== */
-
 @mixin transition-all($time: .4s, $transition: ease) {
   transition: all $time $transition;
 }
+
 @mixin item-hover($id, $bgColor ) {
   &#{$id}:hover {
     background-color: $bgColor;

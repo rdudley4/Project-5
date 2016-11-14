@@ -54,6 +54,11 @@ h2 {
   @extend %margin-bottom;
   @extend %text-uppercase;
   margin-top: 0;
+
+  .icon {
+    font-size: 3rem;
+    display  : block;
+  }
 }
 
 img {

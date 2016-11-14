@@ -1,0 +1,49 @@
+#skills {
+  @extend %center;
+  display  : flex;
+  flex-wrap: wrap;
+
+  h2 {
+    flex-basis: 100%;
+  }
+}
+
+.skills-container {
+  display         : flex;
+  flex-direction  : column;
+  flex-grow       : 1;
+  padding         : 10px;
+  background-color: $color-skills;
+  color           : $color-primary;
+
+  .icon {
+    font-size: 3rem;
+  }
+  @media #{$brk-tablet} {
+    flex: 1;
+  }
+}
+
+.css,
+.html {
+  border-bottom: 2px solid;
+  @media #{$brk-tablet} {
+    border-bottom: none;
+    border-right : 2px solid;
+  }
+}
+
+.ion-social-html5,
+.ion-social-html5 + span {
+  color: $html5;
+}
+
+.ion-social-css3,
+.ion-social-css3 + span {
+  color: $css3;
+}
+
+.ion-social-javascript,
+.ion-social-javascript + span {
+  color: $javascript;
+}

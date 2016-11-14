@@ -2,6 +2,7 @@
 var navContainer = document.getElementById("main-nav"),
     navPortfolio = document.getElementById("nav-portfolio"),
     navContact = document.getElementById("nav-contact"),
+    navSkills = document.getElementById("nav-skills"),
     navToggle = document.getElementById("nav-toggle");
 
 // Footer Navigation Vars
@@ -36,6 +37,10 @@ navPortfolio.onclick = function() {
 
 navContact.onclick = function() {
   goToElement("contact");
+}
+
+navSkills.onclick = function() {
+  goToElement("skills");
 }
 
 // Footer Nav Smooth Scrolling

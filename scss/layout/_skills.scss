@@ -1,7 +1,10 @@
 #skills {
   @extend %center;
-  display  : flex;
-  flex-wrap: wrap;
+  display     : flex;
+  flex-wrap   : wrap;
+  max-width   : 1500px;
+  margin-left : auto;
+  margin-right: auto;
 
   h2 {
     flex-basis: 100%;
@@ -9,6 +12,7 @@
 }
 
 .skills-container {
+  @include transition-all();
   display         : flex;
   flex-direction  : column;
   flex-grow       : 1;
@@ -19,8 +23,26 @@
   .icon {
     font-size: $icon-large;
   }
+
+  &:hover {
+    background-color: lighten($color-skills, 10%);
+  }
   @media #{$brk-tablet} {
     flex: 1;
+  }
+}
+
+.html {
+  @media #{$brk-tablet} {
+    border-top-left-radius   : $br;
+    border-bottom-left-radius: $br;
+  }
+}
+
+.js {
+  @media #{$brk-tablet} {
+    border-top-right-radius   : $br;
+    border-bottom-right-radius: $br;
   }
 }
 

@@ -36,7 +36,6 @@
     flex   : 1 50%;
     padding: 10px;
   }
-
   @media #{$brk-desktop} {
     flex-basis: 33%;
   }
@@ -44,11 +43,17 @@
 
 .item {
   @media #{$brk-tablet} {
-    @include item-hover(1, $marketing);
-    @include item-hover(2, $search);
-    @include item-hover(3, $travel);
-    @include item-hover(4, $map);
-    @include item-hover(5, $gallery);
-    @include item-hover(6, $calculator);
+    @include item-hover(1, $scooter);
+    @include item-hover(2, $golden-grass);
+    @include item-hover(3, $jelly-bean);
+    @include item-hover(4, $fountain-blue);
+    @include item-hover(5, $dolphin);
+    @include item-hover(6, $nevada);
+    @include item-hover(7, $scooter);
+    @include item-hover(8, $vin-rouge);
+    @include item-hover(9, $scooter);
+    @include item-hover(10, $dolphin);
+    @include item-hover(11, $scooter);
+    @include item-hover(12, $jelly-bean);
   }
 }

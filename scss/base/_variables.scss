@@ -2,17 +2,19 @@
 
 $alabaster       : #e8e8e8;
 $tundora         : #4a4a4a;
-$cornflower-blue : #4e8ef7;
-$mine-shaft      : #222;
+$bright-gray     : #3A414c;
+$neptune         : #80c3a8;
 $white           : #fff;
 
 // Functional Color Variables
 
-$color-primary   : $alabaster;
-$color-secondary : $tundora;
+$color-primary   : $neptune;
+$color-secondary : $bright-gray;
 $color-tertiary  : $white;
-$color-highlight : $cornflower-blue;
-$color-skills    : $mine-shaft;
+
+$color-text-dflt : $tundora;
+
+$color-background: $alabaster;
 
 // Portfolio Item Color Variables
 
@@ -51,6 +53,7 @@ $brk-desktop     : "(min-width: 1025px)";
 // Box Shadows
 
 $shdw-bottom     : 0 5px 5px -5px #333;
+$shdw-bottom-lrg : 0 10px 10px -10px #333;
 
 // Radius
-$br              : .3rem;
+$br              : 0.3rem;

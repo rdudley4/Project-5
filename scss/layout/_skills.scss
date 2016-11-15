@@ -5,10 +5,22 @@
   @extend %center;
   display     : flex;
   flex-wrap   : wrap;
+  background-color: $color-secondary;
+  color: $color-primary;
 
   h2 {
     flex-basis: 100%;
+    margin-bottom: 0;
+    padding-bottom: 1.125rem;
+
+    @include query("tablet") {
+      border-bottom: 2px solid;
+    };
   }
+
+  @include query("tablet") {
+    border-radius: $br;
+  };
 }
 
 .skills-container {
@@ -17,15 +29,21 @@
   flex-direction  : column;
   flex-grow       : 1;
   padding         : 10px;
-  background-color: $color-skills;
-  color           : $color-primary;
+  color           : $color-tertiary;
 
   .icon {
     font-size: $icon-large;
+    color: $color-primary;
+  }
+
+  span {
+    @include layout-calc(5, padding, bottom);
+    border-bottom: 2px solid $color-primary;
+    margin: auto;
   }
 
   &:hover {
-    background-color: lighten($color-skills, 10%);
+    background-color: lighten($color-secondary, 5%);
   }
   @include query("tablet") {
     flex: 1;
@@ -48,24 +66,24 @@
 
 .css,
 .html {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid $color-primary;
   @include query("tablet") {
     border-bottom: none;
-    border-right : 2px solid;
+    border-right : 2px solid $color-primary;
   }
 }
 
-.ion-social-html5,
-.ion-social-html5 + span {
-  color: $html5;
-}
-
-.ion-social-css3,
-.ion-social-css3 + span {
-  color: $css3;
-}
-
-.ion-social-javascript,
-.ion-social-javascript + span {
-  color: $javascript;
-}
+// .ion-social-html5,
+// .ion-social-html5 + span {
+//   color: $html5;
+// }
+//
+// .ion-social-css3,
+// .ion-social-css3 + span {
+//   color: $css3;
+// }
+//
+// .ion-social-javascript,
+// .ion-social-javascript + span {
+//   color: $javascript;
+// }

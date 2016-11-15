@@ -18,8 +18,7 @@
     background-color: $color-tertiary;
 
     &:hover {
-      background-color: $color-highlight;
-      color           : $color-tertiary;
+      color           : $color-primary;
       cursor          : pointer;
     }
   }
@@ -30,20 +29,15 @@
       @include layout-calc(32, margin, right);
       margin-bottom   : 0;
       background-color: transparent;
+      border-radius: $br;
 
       &:hover {
-        background-color: transparent;
-        color           : $color-highlight;
+        padding: 15px 15px;
       }
 
       &:last-of-type {
         margin-right: 0;
       }
-    }
-  }
-  @include query("desktop") {
-    li {
-      padding: 0;
     }
   }
 }

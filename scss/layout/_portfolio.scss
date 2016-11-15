@@ -15,14 +15,16 @@
 
 .portfolio-item {
   @extend %margin-bottom;
-  @include transition-all(.3s, ease-in-out);
-
-  p {
-    margin-bottom: 0;
-  }
+  @include transition-all(.3s);
+  border: 4px solid transparent;
 
   i {
     font-size: $icon-medium;
+  }
+
+  p {
+    @include layout-calc(7.5, padding);
+    margin-top: 0;
   }
 
   h3 {
@@ -31,29 +33,33 @@
 
   img {
     @include layout-calc(5, margin, bottom );
+    @include transition-all(.2s);
+    border-bottom: 4px solid transparent;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+    color           : $color-tertiary;
+    border-color    : $color-primary;
+
+    img {
+      border-bottom: 4px solid $color-primary;
+      box-shadow   : $shdw-bottom-lrg;
+    }
+
+    i {
+      color: $color-primary;
+    }
   }
   @include query("tablet") {
-    @include layout-calc(10, padding);
-    flex   : 1 50%;
+     @include layout-calc(10, padding);
+    flex: 1 50%;
   }
   @include query("desktop") {
     flex-basis: 33.3333%;
   }
 }
 
-.item {
-  @include query("tablet") {
-    @include item-hover(1, $scooter);
-    @include item-hover(2, $golden-grass);
-    @include item-hover(3, $jelly-bean);
-    @include item-hover(4, $fountain-blue);
-    @include item-hover(5, $dolphin);
-    @include item-hover(6, $nevada);
-    @include item-hover(7, $scooter);
-    @include item-hover(8, $vin-rouge);
-    @include item-hover(9, $scooter);
-    @include item-hover(10, $dolphin);
-    @include item-hover(11, $scooter);
-    @include item-hover(12, $jelly-bean);
-  }
+.ion-filing {
+  @extend %heading-icon;
 }

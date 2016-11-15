@@ -10,8 +10,8 @@ body {
   margin          : auto;
   line-height     : 1.5;
   font-family     : $stack-montserrat;
-  background-color: $color-primary;
-  color           : $color-secondary;
+  background-color: $color-background;
+  color           : $color-text-dflt;
 
   @media #{$brk-desktop} {
     width: 80%;
@@ -46,7 +46,7 @@ a {
   display        : block;
 
   &:hover {
-    color: $color-highlight;
+    color: $color-primary;
   }
 }
 

@@ -3,7 +3,7 @@
 
 #portfolio {
   @extend %center;
-  @media #{$brk-tablet} {
+  @include query("tablet") {
     display  : flex;
     flex-wrap: wrap;
 
@@ -32,17 +32,17 @@
   img {
     @include layout-calc(5, margin, bottom );
   }
-  @media #{$brk-tablet} {
+  @include query("tablet") {
     @include layout-calc(10, padding);
     flex   : 1 50%;
   }
-  @media #{$brk-desktop} {
+  @include query("desktop") {
     flex-basis: 33.3333%;
   }
 }
 
 .item {
-  @media #{$brk-tablet} {
+  @include query("tablet") {
     @include item-hover(1, $scooter);
     @include item-hover(2, $golden-grass);
     @include item-hover(3, $jelly-bean);

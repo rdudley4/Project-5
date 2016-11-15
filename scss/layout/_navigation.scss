@@ -4,7 +4,7 @@
 #student-name {
   @extend %text-uppercase;
   margin-top: 0;
-  @media #{$brk-desktop} {
+  @include query("desktop") {
     margin-bottom: 0;
   }
 }
@@ -23,7 +23,7 @@
       cursor          : pointer;
     }
   }
-  @media #{$brk-tablet} {
+  @include query("tablet") {
     display: flex;
 
     li {
@@ -41,7 +41,7 @@
       }
     }
   }
-  @media #{$brk-desktop} {
+  @include query("desktop") {
     li {
       padding: 0;
     }
@@ -56,7 +56,7 @@
   &:hover {
     @extend %nav-hover;
   }
-  @media #{$brk-tablet} {
+  @include query("tablet") {
     display: none;
   }
 }

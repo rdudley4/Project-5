@@ -18,3 +18,15 @@
     #{$type}: unquote("#{$px / 16}rem");
   }
 }
+
+@mixin query($breakpoint) {
+  @if $breakpoint == "tablet" {
+    @media #{$brk-tablet} {
+      @content;
+    }
+  } @else if $breakpoint == "desktop" {
+    @media #{$brk-desktop} {
+      @content;
+    }
+  }
+}

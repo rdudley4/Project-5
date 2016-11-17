@@ -16,7 +16,7 @@
 .portfolio-item {
   @extend %margin-bottom;
   @include transition-all(.3s);
-  border: 4px solid transparent;
+  border-radius: $br;
 
   i {
     font-size: $icon-medium;
@@ -34,17 +34,16 @@
   img {
     @include layout-calc(5, margin, bottom );
     @include transition-all(.2s);
-    border-bottom: 4px solid transparent;
+    border: 1px solid transparent;
   }
 
   &:hover {
     background-color: $color-secondary;
     color           : $color-tertiary;
-    border-color    : $color-primary;
 
     img {
-      border-bottom: 4px solid $color-primary;
-      box-shadow   : $shdw-bottom-lrg;
+      border-color: $color-primary;
+      box-shadow  : $shdw-bottom-lrg;
     }
 
     i {
@@ -56,7 +55,7 @@
     flex: 1 50%;
   }
   @include query("desktop") {
-    flex-basis: 33.3333%;
+    flex: 1 33.3333%;
   }
 }
 

@@ -39,6 +39,7 @@
   @include query("tablet") {
     @include layout-calc(10, padding);
     flex: 1 50%;
+    // test
   }
   @include query("desktop") {
     flex: 1 33.3333%;

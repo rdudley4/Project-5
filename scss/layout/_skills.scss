@@ -3,21 +3,19 @@
 
 #skills {
   @extend %center;
-  display     : flex;
-  flex-wrap   : wrap;
+  display         : flex;
+  flex-wrap       : wrap;
   background-color: $color-secondary;
-  color: $color-primary;
+  color           : $color-primary;
 
   h2 {
-    flex-basis: 100%;
-    margin-bottom: 0;
+    flex-basis    : 100%;
+    margin-bottom : 0;
     padding-bottom: 1.125rem;
-
     @include query("tablet") {
       border-bottom: 2px solid;
     };
   }
-
   @include query("tablet") {
     border-radius: $br;
   };
@@ -25,25 +23,26 @@
 
 .skills-container {
   @include transition-all();
-  display         : flex;
-  flex-direction  : column;
-  flex-grow       : 1;
-  padding         : 10px;
-  color           : $color-tertiary;
+  display       : flex;
+  flex-direction: column;
+  flex-grow     : 1;
+  padding       : 10px;
+  color         : $color-tertiary;
+
+  &:hover {
+    background-color: darken($color-secondary, 5%);
+    cursor: help;
+  }
 
   .icon {
     font-size: $icon-large;
-    color: $color-primary;
+    color    : $color-primary;
   }
 
   span {
     @include layout-calc(5, padding, bottom);
     border-bottom: 2px solid $color-primary;
-    margin: auto;
-  }
-
-  &:hover {
-    background-color: lighten($color-secondary, 5%);
+    margin       : auto;
   }
   @include query("tablet") {
     flex: 1;
@@ -72,18 +71,3 @@
     border-right : 2px solid $color-primary;
   }
 }
-
-// .ion-social-html5,
-// .ion-social-html5 + span {
-//   color: $html5;
-// }
-//
-// .ion-social-css3,
-// .ion-social-css3 + span {
-//   color: $css3;
-// }
-//
-// .ion-social-javascript,
-// .ion-social-javascript + span {
-//   color: $javascript;
-// }

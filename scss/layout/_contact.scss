@@ -25,9 +25,9 @@
 
   h2 {
     @include layout-calc(16, padding, bottom);
-    width: 80%;
-    max-width: 620px;
-    margin: auto;
+    width        : 80%;
+    max-width    : 620px;
+    margin       : auto;
     border-bottom: 2px solid $color-primary;
   }
 }

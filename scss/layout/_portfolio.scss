@@ -15,10 +15,37 @@
 
 .portfolio-item {
   @extend %margin-bottom;
-  @include transition-all(.3s);
-  border-radius: $br;
+  transition: border-radius .4s ease-out 0s, background-color .3s ease-in-out 0s, color .3s ease-out .2s;
+
+  &:hover {
+    background-color: $color-secondary;
+    color           : $color-tertiary;
+    border-radius   : 8px;
+
+    .thumbnail {
+      box-shadow: $shdw-bottom-lrg;
+    }
+
+    i {
+      color                     : $color-primary;
+      transition-timing-function: ease-out;
+      transition-delay          : .2s;
+    }
+
+    .project-name:after {
+      transform: scaleX(1);
+    }
+  }
+  @include query("tablet") {
+    @include layout-calc(10, padding);
+    flex: 1 50%;
+  }
+  @include query("desktop") {
+    flex: 1 33.3333%;
+  }
 
   i {
+    display  : block;
     font-size: $icon-medium;
   }
 
@@ -26,34 +53,24 @@
     @include layout-calc(7.5, padding);
     margin-top: 0;
   }
+}
 
-  h3 {
-    margin-top: 0;
-  }
+.thumbnail {
+  @include layout-calc(5, margin, bottom );
+  @include transition-all(.2s);
+}
 
-  img {
-    @include layout-calc(5, margin, bottom );
-    @include transition-all(.2s);
-  }
+.project-name {
+  margin-top: 0;
+  display   : inline-block;
 
-  &:hover {
-    background-color: $color-secondary;
-    color           : $color-tertiary;
-
-    img {
-      box-shadow  : $shdw-bottom-lrg;
-    }
-
-    i {
-      color: $color-primary;
-    }
-  }
-  @include query("tablet") {
-     @include layout-calc(10, padding);
-    flex: 1 50%;
-  }
-  @include query("desktop") {
-    flex: 1 33.3333%;
+  &:after {
+    @include layout-calc(5, margin, top);
+    display      : block;
+    content      : '';
+    border-bottom: 3px solid $color-primary;
+    transform    : scaleX(0);
+    transition   : transform .3s ease-in-out .15s;
   }
 }
 

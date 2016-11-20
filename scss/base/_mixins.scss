@@ -21,5 +21,7 @@
     @media #{$brk-desktop} {
       @content;
     }
+  } @else {
+    @error "`#{$breakpoint}` is not a valid argument for query mixin."
   }
 }

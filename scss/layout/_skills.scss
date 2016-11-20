@@ -31,13 +31,14 @@
 
   &:hover {
     background-color: darken($color-secondary, 5%);
-    cursor: help;
+    cursor          : help;
   }
 
   .icon {
     font-size: $icon-large;
     color    : $color-primary;
-  }
+}
+
 
   span {
     @include layout-calc(5, padding, bottom);

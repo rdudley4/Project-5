@@ -15,7 +15,6 @@ footer {
   &:hover {
     @extend %nav-hover;
   }
-
   @include query("tablet") {
     display: none;
   }
@@ -26,16 +25,13 @@ footer {
   display    : none;
   margin-left: auto;
   @include query("tablet") {
-    display: block;
+    display: flex;
   }
 
   span {
-    @include transition-all();
-
-    &:hover {
-      @extend %nav-hover;
-    }
+    @include hover("nav");
   }
+
 }
 
 #foot-home,

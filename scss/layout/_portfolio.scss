@@ -39,7 +39,6 @@
   @include query("tablet") {
     @include layout-calc(10, padding);
     flex: 1 50%;
-    // test
   }
   @include query("desktop") {
     flex: 1 33.3333%;
@@ -62,17 +61,9 @@
 }
 
 .project-name {
+  @include hover();
   margin-top: 0;
   display   : inline-block;
-
-  &:after {
-    @include layout-calc(5, margin, top);
-    display      : block;
-    content      : '';
-    border-bottom: 3px solid $color-primary;
-    transform    : scaleX(0);
-    transition   : transform .3s ease-in-out .15s;
-  }
 }
 
 .ion-filing {

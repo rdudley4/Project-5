@@ -12,15 +12,10 @@
 #main-nav {
   li {
     @extend %text-uppercase;
-    @include transition-all();
-    @include layout-calc(7.5, margin, bottom);
+    @include hover("nav");
+    // @include layout-calc(7.5, margin, bottom);
     padding         : 15px 0;
     background-color: $color-tertiary;
-
-    &:hover {
-      color           : $color-primary;
-      cursor          : pointer;
-    }
   }
   @include query("tablet") {
     display: flex;
@@ -29,11 +24,6 @@
       @include layout-calc(32, margin, right);
       margin-bottom   : 0;
       background-color: transparent;
-      border-radius: $br;
-
-      &:hover {
-        padding: 15px 15px;
-      }
 
       &:last-of-type {
         margin-right: 0;

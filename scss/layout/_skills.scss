@@ -7,7 +7,6 @@
   flex-wrap       : wrap;
   background-color: $color-secondary;
   color           : $color-primary;
-
   @include query("tablet") {
     border-radius: $br;
   };
@@ -29,16 +28,25 @@
   .icon {
     font-size: $icon-large;
     color    : $color-primary;
-}
-
-
-  span {
-    @include remCalc(5, padding, bottom);
-    border-bottom: 2px solid $color-primary;
-    margin       : auto;
   }
+
   @include query("tablet") {
     flex: 1;
+  }
+}
+
+.language {
+  @include remCalc(5, padding, bottom);
+  border-bottom: 2px solid $color-primary;
+  margin       : auto;
+}
+
+.css,
+.html {
+  border-bottom: 2px solid $color-primary;
+  @include query("tablet") {
+    border-bottom: none;
+    border-right : 2px solid $color-primary;
   }
 }
 
@@ -53,14 +61,5 @@
   @include query("tablet") {
     border-top-right-radius   : $br;
     border-bottom-right-radius: $br;
-  }
-}
-
-.css,
-.html {
-  border-bottom: 2px solid $color-primary;
-  @include query("tablet") {
-    border-bottom: none;
-    border-right : 2px solid $color-primary;
   }
 }

@@ -14,7 +14,7 @@
 
 @mixin hover($type: "default") {
   &:after {
-    @include layout-calc(5, margin, top);
+    @include remCalc(5, margin, top);
     display      : block;
     content      : '';
     border-bottom: 3px solid $color-primary;

@@ -13,13 +13,13 @@
 
   &.prtflio {
     @include query("tablet") {
-      flex-basis: 100%;
+      flex-basis: $flex-full;
     };
   }
 
   &.skills {
     @include remCalc(18, padding, bottom);
-    flex-basis    : 100%;
+    flex-basis    : $flex-full;
     margin-bottom : 0;
     @include query("tablet") {
       border-bottom: 2px solid;

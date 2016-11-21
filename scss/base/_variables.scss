@@ -4,6 +4,9 @@ $alabaster       : #e8e8e8;
 $tundora         : #4a4a4a;
 $bright-gray     : #3A414c;
 $neptune         : #80c3a8;
+$fire-brush      : #e5a229;
+$fun-blue        : #2162af;
+$cinnabar        : #e44f26;
 $white           : #fff;
 
 // Functional Color Variables
@@ -16,21 +19,9 @@ $color-text-dflt : $tundora;
 
 $color-background: $alabaster;
 
-// Portfolio Item Color Variables
-
-$scooter         : #36acd0;
-$golden-grass    : #e0ab26;
-$jelly-bean      : #2572aa;
-$fountain-blue   : #52bab4;
-$dolphin         : #675a85;
-$nevada          : #62717e;
-$vin-rouge       : #903c53;
-
-// Skill Color Variables
-
-$css3            : #2162af;
-$html5           : #e44f26;
-$javascript      : #e5a229;
+$color-css3      : $fun-blue;
+$color-html5     : $cinnabar;
+$color-js        : $fire-brush;
 
 // Font Stacks
 
@@ -38,7 +29,7 @@ $stack-sans-serif: Helvetica, Arial, sans-serif;
 $stack-montserrat: "Montserrat", $stack-sans-serif;
 
 // Font Sizes
-$text-small      : 0.875rem; // 14px
+$text-small      : .875rem; // 14px
 
 // Icon Sizes
 $icon-small      : 1.25rem;
@@ -50,10 +41,15 @@ $icon-large      : 3rem;
 $brk-tablet      : "(min-width: 768px)";
 $brk-desktop     : "(min-width: 1024px)";
 
+// Flex Variables
+$flex-full       : 100%;
+$flex-2col       : 1 50%;
+$flex-3col       : 1 33.3333%;
+
 // Box Shadows
 
 $shdw-bottom     : 0 5px 5px -5px #333;
 $shdw-bottom-lrg : 0 10px 10px -10px #333;
 
 // Radius
-$br              : 0.3rem;
+$br              : .3rem;

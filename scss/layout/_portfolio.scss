@@ -34,10 +34,10 @@
   }
   @include query("tablet") {
     @include remCalc(10, padding);
-    flex: 1 50%;
+    flex: $flex-2col;
   }
   @include query("desktop") {
-    flex: 1 33.3333%;
+    flex: $flex-3col;
   }
 }
 

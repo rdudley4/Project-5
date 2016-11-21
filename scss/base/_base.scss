@@ -12,8 +12,7 @@ body {
   font-family     : $stack-montserrat;
   background-color: $color-background;
   color           : $color-text-dflt;
-
-  @media #{$brk-desktop} {
+  @include query("desktop") {
     width: 80%;
   }
 }
@@ -52,17 +51,6 @@ a {
 
 section {
   @extend %margin-bottom;
-}
-
-h2 {
-  @extend %margin-bottom;
-  @extend %text-uppercase;
-  margin-top: 0;
-
-  .icon {
-    font-size: $icon-large;
-    display  : block;
-  }
 }
 
 img {

@@ -1,0 +1,36 @@
+/* Heading Styles
+   ========================================================================== */
+
+.sect-head {
+  @extend %margin-bottom;
+  @extend %text-uppercase;
+  margin-top: 0;
+
+  .icon {
+    display  : block;
+    font-size: $icon-large;
+  }
+
+  &.prtflio {
+    @include query("tablet") {
+      flex-basis: 100%;
+    };
+  }
+
+  &.skills {
+    @include layout-calc(18, padding, bottom);
+    flex-basis    : 100%;
+    margin-bottom : 0;
+    @include query("tablet") {
+      border-bottom: 2px solid;
+    };
+  }
+
+  &.contact {
+    @include layout-calc(18, padding, bottom);
+    width        : 80%;
+    max-width    : 620px;
+    margin       : auto;
+    border-bottom: 2px solid $color-primary;
+  }
+}

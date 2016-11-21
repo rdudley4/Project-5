@@ -6,10 +6,6 @@
   @include query("tablet") {
     display  : flex;
     flex-wrap: wrap;
-
-    h2 {
-      flex-basis: 100%;
-    }
   }
 }
 
@@ -26,7 +22,7 @@
       box-shadow: $shdw-bottom-lrg;
     }
 
-    i {
+    .prtflio-icon {
       color                     : $color-primary;
       transition-timing-function: ease-out;
       transition-delay          : .2s;
@@ -43,16 +39,16 @@
   @include query("desktop") {
     flex: 1 33.3333%;
   }
+}
 
-  i {
-    display  : block;
-    font-size: $icon-medium;
-  }
+.prtflio-icon {
+  display  : block;
+  font-size: $icon-medium;
+}
 
-  p {
-    @include layout-calc(7.5, padding);
-    margin-top: 0;
-  }
+.prtflio-desc {
+  @include layout-calc(7.5, padding);
+  margin-top: 0;
 }
 
 .thumbnail {

@@ -8,14 +8,6 @@
   background-color: $color-secondary;
   color           : $color-primary;
 
-  h2 {
-    flex-basis    : 100%;
-    margin-bottom : 0;
-    padding-bottom: 1.125rem;
-    @include query("tablet") {
-      border-bottom: 2px solid;
-    };
-  }
   @include query("tablet") {
     border-radius: $br;
   };

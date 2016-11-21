@@ -19,8 +19,8 @@ body {
 
 header {
   @extend %center;
-  @include layout-calc(16, padding, top);
-  @include layout-calc(60, margin, bottom);
+  @include remCalc(16, padding, top);
+  @include remCalc(60, margin, bottom);
   @include query("tablet") {
     display       : flex;
     flex-direction: column;

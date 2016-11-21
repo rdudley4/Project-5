@@ -36,5 +36,5 @@ footer {
 
 #foot-home,
 #foot-portfolio {
-  @include layout-calc(15, margin, right);
+  @include remCalc(15, margin, right);
 }

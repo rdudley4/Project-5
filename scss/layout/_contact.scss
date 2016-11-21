@@ -7,7 +7,7 @@
   margin-bottom: 0;
 
   a {
-    @include layout-calc(10, margin, bottom);
+    @include remCalc(10, margin, bottom);
 
     &:last-of-type {
       @extend %margin-bottom;

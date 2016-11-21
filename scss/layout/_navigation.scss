@@ -13,7 +13,6 @@
   li {
     @extend %text-uppercase;
     @include hover("nav");
-    // @include layout-calc(7.5, margin, bottom);
     padding         : 15px 0;
     background-color: $color-tertiary;
   }
@@ -21,7 +20,7 @@
     display: flex;
 
     li {
-      @include layout-calc(32, margin, right);
+      @include remCalc(32, margin, right);
       margin-bottom   : 0;
       background-color: transparent;
 
@@ -34,7 +33,7 @@
 
 #nav-toggle {
   @include transition-all();
-  @include layout-calc(5, padding);
+  @include remCalc(5, padding);
   font-size: $icon-small;
 
   &:hover {

@@ -33,7 +33,7 @@
     }
   }
   @include query("tablet") {
-    @include layout-calc(10, padding);
+    @include remCalc(10, padding);
     flex: 1 50%;
   }
   @include query("desktop") {
@@ -47,12 +47,12 @@
 }
 
 .prtflio-desc {
-  @include layout-calc(7.5, padding);
+  @include remCalc(7.5, padding);
   margin-top: 0;
 }
 
 .thumbnail {
-  @include layout-calc(5, margin, bottom );
+  @include remCalc(5, margin, bottom );
   @include transition-all(.2s);
 }
 

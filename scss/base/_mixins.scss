@@ -4,7 +4,7 @@
   transition: all $time $transition;
 }
 
-@mixin layout-calc($px, $type, $direction: null) {
+@mixin remCalc($px, $type, $direction: null) {
   @if ($direction) {
     #{$type}-#{$direction}: unquote("#{$px / 16}rem");
   } @else {

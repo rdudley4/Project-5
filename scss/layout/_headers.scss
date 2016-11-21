@@ -18,7 +18,7 @@
   }
 
   &.skills {
-    @include layout-calc(18, padding, bottom);
+    @include remCalc(18, padding, bottom);
     flex-basis    : 100%;
     margin-bottom : 0;
     @include query("tablet") {
@@ -27,7 +27,7 @@
   }
 
   &.contact {
-    @include layout-calc(18, padding, bottom);
+    @include remCalc(18, padding, bottom);
     width        : 80%;
     max-width    : 620px;
     margin       : auto;

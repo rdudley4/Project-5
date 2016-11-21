@@ -33,7 +33,7 @@
 
 
   span {
-    @include layout-calc(5, padding, bottom);
+    @include remCalc(5, padding, bottom);
     border-bottom: 2px solid $color-primary;
     margin       : auto;
   }

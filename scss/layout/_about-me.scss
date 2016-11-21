@@ -21,7 +21,7 @@
 }
 
 #description {
-  @include layout-calc(-6, margin, top);
+  @include remCalc(-6, margin, top);
   @include query("tablet") {
     width        : 65%;
     align-self   : center;

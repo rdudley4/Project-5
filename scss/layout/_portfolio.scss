@@ -12,30 +12,32 @@
 .portfolio-item {
   @extend %margin-bottom;
   transition: border-radius .4s ease-out 0s, background-color .3s ease-in-out 0s, color .3s ease-out .2s;
-
-  // &:hover {
-  //   background-color: $color-secondary;
-  //   color           : $color-tertiary;
-  //   border-radius   : 8px;
-
-  //   .thumbnail {
-  //     box-shadow: $shdw-bottom-lrg;
-  //   }
-
-  //   .prtflio-icon {
-  //     color                     : $color-primary;
-  //     transition-timing-function: ease-out;
-  //     transition-delay          : .2s;
-  //   }
-
-  //   .project-name:after {
-  //     transform: scaleX(1);
-  //   }
-  // }
+  // TABLET
   @include query("tablet") {
     @include remCalc(10, padding);
     flex: $flex-2col;
+
+    &:hover {
+    background-color: $color-secondary;
+    color           : $color-tertiary;
+    border-radius   : 8px;
+
+      .thumbnail {
+        box-shadow: $shdw-bottom-lrg;
+      }
+
+      .prtflio-icon {
+        color                     : $color-primary;
+        transition-timing-function: ease-out;
+        transition-delay          : .2s;
+      }
+
+      .project-name:after {
+        transform: scaleX(1);
+      }
+    }
   }
+  // DESKTOP
   @include query("desktop") {
     flex: $flex-3col;
   }
@@ -57,9 +59,13 @@
 }
 
 .project-name {
-  // @include hover();
   margin-top: 0;
   display   : inline-block;
+
+  // TABLET
+  @include query("tablet") {
+    @include hover();
+  }
 }
 
 .ion-filing {

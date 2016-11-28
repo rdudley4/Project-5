@@ -1,6 +1,9 @@
 PROJECT TODO LIST
 
-1. Remove hover effects from mobile devices, as they are not really needed (Nav & Portfolio).
-2. Replace mobile nav hover effect with an active state effect.
+1. Re-enable portfolio item hover effects on tablet+ screen sizes.
+2. Completely remove the transition-all mixin. As using transition all is suboptimal in terms of performance.
+    - Either rewrite the mixin to transition properties supplied to the mixin, or just define them normally within their respective rule.
+    - If using a mixin, it would need to be able to accept at least 2 arguments. However the second argument could be null as it may not be required.
+      Although this method is not very flexible because it limits us to transitioning at most 2 properties.
 3. Finish cleaning up sass files (Remove over nesting, add comments etc.)
 4. Add more sass subfolders as per project specifications.

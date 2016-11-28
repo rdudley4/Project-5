@@ -239,6 +239,22 @@ img {
     padding: 0.625rem;
     flex: 1 50%;
   }
+  .portfolio-item:hover {
+    background-color: #3A414c;
+    color: #fff;
+    border-radius: 8px;
+  }
+  .portfolio-item:hover .thumbnail {
+    box-shadow: 0 10px 10px -10px #333;
+  }
+  .portfolio-item:hover .prtflio-icon {
+    color: #80c3a8;
+    transition-timing-function: ease-out;
+    transition-delay: .2s;
+  }
+  .portfolio-item:hover .project-name:after {
+    transform: scaleX(1);
+  }
 }
 @media (min-width: 1024px) {
   .portfolio-item {
@@ -264,6 +280,16 @@ img {
 .project-name {
   margin-top: 0;
   display: inline-block;
+}
+@media (min-width: 768px) {
+  .project-name:after {
+    margin-top: 0.3125rem;
+    display: block;
+    content: '';
+    border-bottom: 3px solid #80c3a8;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out .15s;
+  }
 }
 
 /* Contact Styles

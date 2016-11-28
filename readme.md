@@ -4,5 +4,6 @@ It has been completely rebuilt from the ground up, so it could also utilize flex
 
 ## Live Preview
 If you would like to view a live preview of the site click the link below.
+
 [View Live Preview](https://rdudley4.github.io/Project-5)
 

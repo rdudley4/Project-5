@@ -9,12 +9,9 @@ footer {
 
 #to-top {
   @extend %text-uppercase;
-  @include transition-all();
+  @extend %nav-hover;
   margin-left: auto;
 
-  &:hover {
-    @extend %nav-hover;
-  }
   @include query("tablet") {
     display: none;
   }
@@ -24,11 +21,13 @@ footer {
   @extend %text-uppercase;
   display    : none;
   margin-left: auto;
+  
   @include query("tablet") {
     display: flex;
   }
 
   span {
+    @extend %nav-hover;
     @include hover("nav");
   }
 

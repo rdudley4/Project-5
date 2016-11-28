@@ -4,6 +4,7 @@
 #student-name {
   @extend %text-uppercase;
   margin-top: 0;
+
   @include query("desktop") {
     margin-bottom: 0;
   }
@@ -12,14 +13,17 @@
 #main-nav {
   li {
     @extend %text-uppercase;
-    @include hover("nav");
+    @extend %nav-hover;
+    @include remCalc(7.5, margin, bottom);
     padding         : 15px 0;
     background-color: $color-tertiary;
   }
+
   @include query("tablet") {
     display: flex;
 
     li {
+      @include hover("nav");
       @include remCalc(32, margin, right);
       margin-bottom   : 0;
       background-color: transparent;
@@ -32,13 +36,10 @@
 }
 
 #nav-toggle {
-  @include transition-all();
+  @extend %nav-hover;
   @include remCalc(5, padding);
   font-size: $icon-small;
 
-  &:hover {
-    @extend %nav-hover;
-  }
   @include query("tablet") {
     display: none;
   }

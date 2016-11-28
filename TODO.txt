@@ -1,0 +1,6 @@
+PROJECT TODO LIST
+
+1. Remove hover effects from mobile devices, as they are not really needed (Nav & Portfolio).
+2. Replace mobile nav hover effect with an active state effect.
+3. Finish cleaning up sass files (Remove over nesting, add comments etc.)
+4. Add more sass subfolders as per project specifications.

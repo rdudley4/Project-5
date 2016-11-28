@@ -12,25 +12,28 @@ footer {
   @extend %nav-hover;
   margin-left: auto;
 
+  // TABLET
   @include query("tablet") {
     display: none;
   }
 }
 
+// Footer Nav Container
 #footer-nav {
   @extend %text-uppercase;
   display    : none;
   margin-left: auto;
-  
+
+  // TABLET
   @include query("tablet") {
     display: flex;
   }
+}
 
-  span {
-    @extend %nav-hover;
-    @include hover("nav");
-  }
-
+// Footer Nav Links
+.ft-nav-item {
+  @extend %nav-hover;
+  @include hover("nav");
 }
 
 #foot-home,

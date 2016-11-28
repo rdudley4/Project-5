@@ -55,4 +55,7 @@ $shdw-bottom-lrg : 0 10px 10px -10px #333;
 $br              : .3rem;
 
 // Transitions
-$transition-nav  : color .25s ease-in;
+$transition-color: color .25s ease-in;
+
+// Borders
+$border-default  : 2px solid $color-primary;

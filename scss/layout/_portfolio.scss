@@ -3,6 +3,8 @@
 
 #portfolio {
   @extend %center;
+
+  // TABLET
   @include query("tablet") {
     display  : flex;
     flex-wrap: wrap;
@@ -12,6 +14,7 @@
 .portfolio-item {
   @extend %margin-bottom;
   transition: border-radius .4s ease-out 0s, background-color .3s ease-in-out 0s, color .3s ease-out .2s;
+
   // TABLET
   @include query("tablet") {
     @include remCalc(10, padding);
@@ -37,6 +40,7 @@
       }
     }
   }
+
   // DESKTOP
   @include query("desktop") {
     flex: $flex-3col;
@@ -55,12 +59,12 @@
 
 .thumbnail {
   @include remCalc(5, margin, bottom );
-  @include transition-all(.2s);
+  transition: box-shadow .2s ease;
 }
 
 .project-name {
-  margin-top: 0;
   display   : inline-block;
+  margin-top: 0;
 
   // TABLET
   @include query("tablet") {

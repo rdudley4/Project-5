@@ -1,9 +1,23 @@
 PROJECT TODO LIST
 
-1. Re-enable portfolio item hover effects on tablet+ screen sizes.
-2. Completely remove the transition-all mixin. As using transition all is suboptimal in terms of performance.
+1. Completely remove the transition-all mixin. As using transition all is suboptimal in terms of performance.
     - Either rewrite the mixin to transition properties supplied to the mixin, or just define them normally within their respective rule.
     - If using a mixin, it would need to be able to accept at least 2 arguments. However the second argument could be null as it may not be required.
       Although this method is not very flexible because it limits us to transitioning at most 2 properties.
-3. Finish cleaning up sass files (Remove over nesting, add comments etc.)
-4. Add more sass subfolders as per project specifications.
+2. Finish cleaning up sass files (Remove over nesting, add comments etc.)
+3. Add more sass subfolders as per project specifications.
+
+Cleanup Checklist
+-----------------
+
+1. Base...DONE
+2. Extends...DONE
+3. Mixins...DONE
+4. Variables...DONE
+5. About Me...DONE
+6. Contact...DONE
+7. Footer...DONE
+8. Headers...DONE
+9. Navigation...DONE
+10. Portfolio...DONE
+11. Skills...DONE

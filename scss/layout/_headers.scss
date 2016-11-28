@@ -1,4 +1,4 @@
-/* Heading Styles
+/* Section Heading Styles
    ========================================================================== */
 
 .sect-head {
@@ -12,6 +12,7 @@
   }
 
   &.prtflio {
+    // TABLET
     @include query("tablet") {
       flex-basis: $flex-full;
     };
@@ -21,6 +22,8 @@
     @include remCalc(18, padding, bottom);
     flex-basis    : $flex-full;
     margin-bottom : 0;
+
+    // TABLET
     @include query("tablet") {
       border-bottom: 2px solid;
     };

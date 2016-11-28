@@ -5,21 +5,23 @@
   @extend %center;
   border-bottom: 1px solid $color-secondary;
   margin-bottom: 0;
+}
 
-  a {
-    @include remCalc(10, margin, bottom);
+.contact-info {
+  width    : 90%;
+  max-width: 620px;
+  margin   : 1rem auto 2.1875rem;
 
-    &:last-of-type {
-      @extend %margin-bottom;
-    }
+  // TABLET
+  @include query("tablet") {
+    width: 75%;
   }
+}
 
-  p {
-    width    : 90%;
-    max-width: 620px;
-    margin   : 1rem auto 2.1875rem;
-    @include query("tablet") {
-      width: 75%;
-    }
+.contact-link {
+  @include remCalc(10, margin, bottom);
+
+  &:last-of-type {
+    @extend %margin-bottom;
   }
 }

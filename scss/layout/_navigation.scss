@@ -5,6 +5,7 @@
   @extend %text-uppercase;
   margin-top: 0;
 
+  // DESKTOP
   @include query("desktop") {
     margin-bottom: 0;
   }
@@ -15,10 +16,11 @@
     @extend %text-uppercase;
     @extend %nav-hover;
     @include remCalc(7.5, margin, bottom);
-    padding         : 15px 0;
+    padding         : .9375rem 0;
     background-color: $color-tertiary;
   }
 
+  // TABLET
   @include query("tablet") {
     display: flex;
 
@@ -40,6 +42,7 @@
   @include remCalc(5, padding);
   font-size: $icon-small;
 
+  // TABLET
   @include query("tablet") {
     display: none;
   }

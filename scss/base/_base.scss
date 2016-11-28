@@ -12,6 +12,8 @@ body {
   font-family     : $stack-montserrat;
   background-color: $color-background;
   color           : $color-text-dflt;
+
+  // DESKTOP
   @include query("desktop") {
     width: 80%;
   }
@@ -21,11 +23,15 @@ header {
   @extend %center;
   @include remCalc(16, padding, top);
   @include remCalc(60, margin, bottom);
+  
+  // TABLET
   @include query("tablet") {
     display       : flex;
     flex-direction: column;
     align-items   : center;
   }
+  
+  // DESKTOP
   @include query("desktop") {
     flex-direction : row;
     justify-content: space-between;
@@ -39,10 +45,10 @@ ul {
 }
 
 a {
-  @include transition-all();
+  color          : inherit;
   text-decoration: none;
-  color          : $color-secondary;
   display        : block;
+  transition     : $transition-color;
 
   &:hover {
     color: $color-primary;

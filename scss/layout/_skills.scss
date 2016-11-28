@@ -5,20 +5,22 @@
   @extend %center;
   display         : flex;
   flex-wrap       : wrap;
-  background-color: $color-secondary;
   color           : $color-primary;
+  background-color: $color-secondary;
+
+  // TABLET
   @include query("tablet") {
     border-radius: $br;
-  };
+  }
 }
 
 .skills-container {
-  @include transition-all();
+  @include remCalc(10, padding);
   display       : flex;
   flex-direction: column;
   flex-grow     : 1;
-  padding       : 10px;
   color         : $color-tertiary;
+  transition    : background-color .25s ease-in;
 
   &:hover {
     background-color: darken($color-secondary, 5%);
@@ -29,6 +31,7 @@
     color    : $color-primary;
   }
 
+  // TABLET
   @include query("tablet") {
     flex: 1;
   }
@@ -36,20 +39,23 @@
 
 .language {
   @include remCalc(5, padding, bottom);
-  border-bottom: 2px solid $color-primary;
   margin       : auto;
+  border-bottom: $border-default;
 }
 
 .css,
 .html {
-  border-bottom: 2px solid $color-primary;
+  border-bottom: $border-default;
+
+  // TABLET
   @include query("tablet") {
     border-bottom: none;
-    border-right : 2px solid $color-primary;
+    border-right : $border-default;
   }
 }
 
 .html {
+  // TABLET
   @include query("tablet") {
     border-top-left-radius   : $br;
     border-bottom-left-radius: $br;
@@ -57,6 +63,7 @@
 }
 
 .js {
+  // TABLET
   @include query("tablet") {
     border-top-right-radius   : $br;
     border-bottom-right-radius: $br;

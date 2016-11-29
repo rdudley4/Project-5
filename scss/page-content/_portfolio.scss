@@ -12,7 +12,7 @@
 }
 
 .portfolio-item {
-  @extend %margin-bottom;
+  @extend %section-separator;
   transition: border-radius .4s ease-out 0s, background-color .3s ease-in-out 0s, color .3s ease-out .2s;
 
   // TABLET
@@ -68,7 +68,7 @@
 
   // TABLET
   @include query("tablet") {
-    @include hover();
+    @include underline-effect();
   }
 }
 

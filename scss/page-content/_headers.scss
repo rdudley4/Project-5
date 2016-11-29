@@ -2,7 +2,7 @@
    ========================================================================== */
 
 .sect-head {
-  @extend %margin-bottom;
+  @extend %section-separator;
   @extend %text-uppercase;
   margin-top: 0;
 
@@ -20,13 +20,10 @@
 
   &.skills {
     @include remCalc(18, padding, bottom);
-    flex-basis    : $flex-full;
-    margin-bottom : 0;
-
-    // TABLET
-    @include query("tablet") {
-      border-bottom: 2px solid;
-    };
+    flex-basis   : $flex-full;
+    margin-bottom: 0;
+    border-bottom: $border-default;
+    box-shadow   : $shdw-bottom-lrg;
   }
 
   &.contact {
@@ -34,6 +31,6 @@
     width        : 80%;
     max-width    : 620px;
     margin       : auto;
-    border-bottom: 2px solid $color-primary;
+    border-bottom: $border-default;
   }
 }

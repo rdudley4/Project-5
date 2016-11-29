@@ -1,11 +1,6 @@
 PROJECT TODO LIST
 
-1. Completely remove the transition-all mixin. As using transition all is suboptimal in terms of performance.
-    - Either rewrite the mixin to transition properties supplied to the mixin, or just define them normally within their respective rule.
-    - If using a mixin, it would need to be able to accept at least 2 arguments. However the second argument could be null as it may not be required.
-      Although this method is not very flexible because it limits us to transitioning at most 2 properties.
-2. Finish cleaning up sass files (Remove over nesting, add comments etc.)
-3. Add more sass subfolders as per project specifications.
+1. Fix some wierd flex-box sizing issues on IE. Perhaps use IE specific rules to style specifically for IE.
 
 Cleanup Checklist
 -----------------
@@ -21,3 +16,6 @@ Cleanup Checklist
 9. Navigation...DONE
 10. Portfolio...DONE
 11. Skills...DONE
+
+CSS Validation...VALID
+HTML Validation...VALID

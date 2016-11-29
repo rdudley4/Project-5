@@ -3,7 +3,7 @@
 
 #contact {
   @extend %center;
-  border-bottom: 1px solid $color-secondary;
+  border-bottom: $border-drk-sm;
   margin-bottom: 0;
 }
 
@@ -20,8 +20,11 @@
 
 .contact-link {
   @include remCalc(10, margin, bottom);
+  max-width   : 50%;
+  margin-left : auto;
+  margin-right: auto;
 
   &:last-of-type {
-    @extend %margin-bottom;
+    @extend %section-separator;
   }
 }

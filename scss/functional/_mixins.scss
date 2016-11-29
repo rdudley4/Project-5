@@ -1,9 +1,10 @@
 /* Mixins
    ========================================================================== */
-@mixin transition-all($time: .4s, $transition: ease) {
-  transition: all $time $transition;
-}
 
+// Input desired margin or padding in pixels and convert to rem.
+// If no $direction is supplied, then apply to all sides.
+// Ex. remCalc(5, margin, bottom) -> margin-bottom: 0.3125rem
+// Ex2. remCalc(20, padding) -> padding: 1.25rem
 @mixin remCalc($px, $type, $direction: null) {
   @if ($direction) {
     #{$type}-#{$direction}: unquote("#{$px / 16}rem");
@@ -12,12 +13,12 @@
   }
 }
 
-@mixin hover($type: "default") {
+@mixin underline-effect($type: "default") {
   &:after {
     @include remCalc(5, margin, top);
     display      : block;
     content      : '';
-    border-bottom: 3px solid $color-primary;
+    border-bottom: $border-default;
     transform    : scaleX(0);
     transition   : transform .3s ease-in-out .15s;
   }
@@ -41,6 +42,6 @@
       @content;
     }
   } @else {
-    @error "`#{$breakpoint}` is not a valid argument for query mixin."
+    @error "`#{$breakpoint}` is not a valid argument for query mixin.";
   }
 }

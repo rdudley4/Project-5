@@ -2,14 +2,19 @@
    ========================================================================== */
 
 footer {
+  @include remCalc(25, margin, top);
+  @include remCalc(25, margin, bottom);
   display  : flex;
-  margin   : 25px 0;
   font-size: $text-small;
+
+  @include query("tablet") {
+    @include remCalc(20, margin, bottom);
+  }
 }
 
 #to-top {
   @extend %text-uppercase;
-  @extend %nav-hover;
+  @extend %hover-transition;
   margin-left: auto;
 
   // TABLET
@@ -32,8 +37,8 @@ footer {
 
 // Footer Nav Links
 .ft-nav-item {
-  @extend %nav-hover;
-  @include hover("nav");
+  @extend %hover-transition;
+  @include underline-effect("nav");
 }
 
 #foot-home,

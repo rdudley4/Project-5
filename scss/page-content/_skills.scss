@@ -57,7 +57,6 @@
 .html {
   // TABLET
   @include query("tablet") {
-    border-top-left-radius   : $br;
     border-bottom-left-radius: $br;
   }
 }
@@ -65,7 +64,6 @@
 .js {
   // TABLET
   @include query("tablet") {
-    border-top-right-radius   : $br;
     border-bottom-right-radius: $br;
   }
 }

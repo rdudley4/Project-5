@@ -38,10 +38,22 @@
       @content;
     }
   } @else if $breakpoint == "desktop" {
-    @media #{$brk-desktop} {
-      @content;
-    }
+      @media #{$brk-desktop} {
+        @content;
+      }
+  } @else if $breakpoint == "ie-mobile" {
+      @media #{$brk-ie} {
+        @content;
+      }
+  } @else if $breakpoint == "ie-tablet" {
+      @media #{$brk-tablet} and #{$brk-ie} {
+        @content;
+      }
+  } @else if $breakpoint == "ie-desktop" {
+      @media #{$brk-desktop} and #{$brk-ie} {
+        @content;
+      }
   } @else {
-    @error "`#{$breakpoint}` is not a valid argument for query mixin.";
+      @error "`#{$breakpoint}` is not a valid argument for query mixin.";
   }
 }

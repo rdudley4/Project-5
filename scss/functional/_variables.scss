@@ -40,6 +40,7 @@ $icon-large      : 3rem;
 
 $brk-tablet      : "(min-width: 768px)";
 $brk-desktop     : "(min-width: 1024px)";
+$brk-ie          : "(-ms-high-contrast: none), (-ms-high-contrast: active)";
 
 // Flex Variables
 $flex-full       : 100%;

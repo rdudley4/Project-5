@@ -45,6 +45,16 @@
   @include query("desktop") {
     flex: $flex-3col;
   }
+
+  // IE-TABLET - Fixes two column layout.
+  @include query("ie-tablet") {
+    flex: 1 47%;
+  }
+
+  // IE-DESKTOP - Fixes three column layout.
+  @include query("ie-desktop") {
+    flex: 1 30.8%;
+  }
 }
 
 .prtflio-icon {

@@ -77,3 +77,22 @@ window.onresize = function() {
     showNav();
   }
 }
+
+// Add hotkeys for easy site navigation.
+window.onkeypress = function(event) {
+  var lastKeyPressed = event.which || event.keyCode;
+  switch(lastKeyPressed) {
+    case 104: // H -> Home
+      goToElement("page-top");
+      break;
+    case 112: // P -> Portfolio
+      goToElement("portfolio");
+      break;
+    case 115: // S -> Skills
+      goToElement("skills");
+      break;
+    case 99: // C -> Contact
+      goToElement("contact");
+      break;
+  }
+}

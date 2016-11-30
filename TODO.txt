@@ -1,10 +1,11 @@
 PROJECT TODO LIST
-
-1. Fix some wierd flex-box sizing issues on IE. Perhaps use IE specific rules to style specifically for IE.
+-----------------
+1. Fix .skills-container .icon's on IE10, can just set them to display block.
+2. Fix footer nav on IE10, switch from flex to display block on container, and set children to inline-block.
+3. Fix CSS validation errors.
 
 Cleanup Checklist
 -----------------
-
 1. Base...DONE
 2. Extends...DONE
 3. Mixins...DONE

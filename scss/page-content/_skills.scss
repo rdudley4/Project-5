@@ -29,25 +29,31 @@
   .icon {
     font-size: $icon-large;
     color    : $color-primary;
+
+    // IE
+    @include query("ie-base") {
+      display: block;
+    }
   }
 
   // TABLET
   @include query("tablet") {
     flex: 1;
   }
-  // IE MOBILE - Fixes flex issues on mobile.
-  @include query("ie-mobile") {
+  // IE - Fixes flex issues.
+  @include query("ie-base") {
     width: 100%;
   }
 }
 
 .language {
   @include remCalc(5, padding, bottom);
-  margin       : auto;
+  margin-left  : auto;
+  margin-right : auto;
   border-bottom: $border-default;
 
-  // IE MOBILE - Fixes border expanding full width.
-  @include query("ie-mobile") {
+  // IE - Fixes border expanding full width.
+  @include query("ie-base") {
     width: 120px;
   }
 }

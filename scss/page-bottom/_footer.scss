@@ -33,12 +33,22 @@ footer {
   @include query("tablet") {
     display: flex;
   }
+
+  // IE
+  @include query("ie-tablet") {
+    display: block;
+  }
 }
 
 // Footer Nav Links
 .ft-nav-item {
   @extend %hover-transition;
   @include underline-effect("nav");
+
+  // IE
+  @include query("ie-tablet") {
+    display: inline-block;
+  }
 }
 
 #foot-home,

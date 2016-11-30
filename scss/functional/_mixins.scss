@@ -41,16 +41,16 @@
       @media #{$brk-desktop} {
         @content;
       }
-  } @else if $breakpoint == "ie-mobile" {
-      @media #{$brk-ie} {
+  } @else if $breakpoint == "ie-base" {
+      @media screen and #{$brk-ie} {
         @content;
       }
   } @else if $breakpoint == "ie-tablet" {
-      @media #{$brk-tablet} and #{$brk-ie} {
+      @media screen and #{$brk-tablet} and #{$brk-ie} {
         @content;
       }
   } @else if $breakpoint == "ie-desktop" {
-      @media #{$brk-desktop} and #{$brk-ie} {
+      @media screen and #{$brk-desktop} and #{$brk-ie} {
         @content;
       }
   } @else {

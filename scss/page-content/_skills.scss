@@ -2,7 +2,7 @@
    ========================================================================== */
 
 #skills {
-  @extend %center;
+  @extend %text-center;
   display         : flex;
   flex-wrap       : wrap;
   color           : $color-primary;
@@ -47,9 +47,8 @@
 }
 
 .language {
+  @extend %margin-center;
   @include remCalc(5, padding, bottom);
-  margin-left  : auto;
-  margin-right : auto;
   border-bottom: $border-default;
 
   // IE - Fixes border expanding full width.

@@ -2,10 +2,9 @@
    ========================================================================== */
 
 #about-me {
-  @extend %center;
+  @extend %text-center;
+  @extend %margin-center;
   max-width   : 1150px;
-  margin-left : auto;
-  margin-right: auto;
 
   // TABLET
   @include query("tablet") {

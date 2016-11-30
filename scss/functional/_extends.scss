@@ -5,8 +5,13 @@
   text-transform: uppercase;
 }
 
-%center {
+%text-center {
   text-align: center;
+}
+
+%margin-center {
+  margin-left : auto;
+  margin-right: auto;
 }
 
 %section-separator {
@@ -25,7 +30,7 @@
 %heading-icon {
   max-width       : 72px;
   border-radius   : 50%;
-  margin          : 0 auto 16px;
+  margin          : 0 auto 1rem;
   color           : $color-primary;
   background-color: $color-secondary;
 }

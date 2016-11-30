@@ -32,9 +32,9 @@ $stack-montserrat: "Montserrat", $stack-sans-serif;
 $text-small      : .875rem; // 14px
 
 // Icon Sizes
-$icon-small      : 1.25rem;
-$icon-medium     : 2rem;
-$icon-large      : 3rem;
+$icon-small      : 1.25rem; // 20px
+$icon-medium     : 2rem;    // 32px
+$icon-large      : 3rem;    // 48px
 
 // Media Query Breakpoints
 
@@ -55,7 +55,7 @@ $shdw-bottom     : 0 5px 5px -5px #333;
 $shdw-bottom-lrg : 0 10px 10px -10px #333;
 
 // Radius
-$br              : .3rem;
+$br              : .3125rem; // 5px
 
 // Transitions
 $transition-color: color .25s ease-in;

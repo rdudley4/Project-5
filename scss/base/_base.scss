@@ -6,8 +6,8 @@
 }
 
 body {
+  @extend %margin-center;
   width           : 90%;
-  margin          : auto;
   line-height     : 1.5;
   font-family     : $stack-montserrat;
   background-color: $color-background;
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  @extend %center;
+  @extend %text-center;
   @include remCalc(16, padding, top);
   @include remCalc(60, margin, bottom);
   

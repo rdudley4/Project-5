@@ -2,7 +2,7 @@
    ========================================================================== */
 
 #portfolio {
-  @extend %center;
+  @extend %text-center;
 
   // TABLET
   @include query("tablet") {
@@ -23,7 +23,7 @@
     &:hover {
     background-color: $color-secondary;
     color           : $color-tertiary;
-    border-radius   : 8px;
+    border-radius   : $br;
 
       .thumbnail {
         box-shadow: $shdw-bottom-lrg;

@@ -6,6 +6,7 @@ footer {
   @include remCalc(25, margin, bottom);
   display  : flex;
   font-size: $text-small;
+  color    : $color-secondary;
 
   @include query("tablet") {
     @include remCalc(20, margin, bottom);

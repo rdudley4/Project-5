@@ -16,7 +16,7 @@
 #profile-photo {
   width : 152.15px;
   height: 210.8px;
-
+ 
   // TABLET
   @include query("tablet") {
     box-shadow: $shdw-bottom;

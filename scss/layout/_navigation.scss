@@ -11,12 +11,16 @@
   }
 }
 
+.first { color: $color-secondary }
+.last  { color: $color-primary   }
+
 #main-nav {
   li {
     @extend %text-uppercase;
     @extend %hover-transition;
     @include remCalc(7.5, margin, bottom);
     padding         : .9375rem 0;
+    color           : $color-secondary;
     background-color: $color-tertiary;
   }
 

@@ -4,7 +4,7 @@
 #about-me {
   @extend %text-center;
   @extend %margin-center;
-  max-width   : 1150px;
+  max-width   : $mw;
 
   // TABLET
   @include query("tablet") {

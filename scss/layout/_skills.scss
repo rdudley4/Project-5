@@ -3,8 +3,10 @@
 
 #skills {
   @extend %text-center;
+  @extend %margin-center;
   display         : flex;
   flex-wrap       : wrap;
+  max-width       : $mw;
   color           : $color-primary;
   background-color: $color-secondary;
 

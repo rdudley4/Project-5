@@ -17,7 +17,7 @@ You can use the following keys to easily navigate to any section on the page.
 **C** → Go to Contact
 
 ## Browser Compatibility
-This site has been tested and confirmed working on the following browsers:
+This site has been tested on the following browsers:
 
 | Browser       | Version       | OS  | Compatible |
 |:-------------:|:-------------:|:---:|:----------:|

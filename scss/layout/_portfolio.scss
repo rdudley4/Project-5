@@ -13,7 +13,8 @@
 
 .portfolio-item {
   @extend %section-separator;
-  transition: border-radius .4s ease-out 0s, background-color .3s ease-in-out 0s, color .3s ease-out .2s;
+  border-radius: $br;
+  transition: background-color .3s ease-in-out, color .3s ease-out .2s;
 
   // TABLET
   @include query("tablet") {
@@ -21,16 +22,15 @@
     flex: $flex-2col;
 
     &:hover {
-      color           : $color-tertiary;
-      border-radius   : $br;
-
-      .prtflio-icon {
-        transition-timing-function: ease-out;
-        transition-delay          : .2s;
-      }
+      color: $color-tertiary;
 
       .project-name:after {
         transform: scaleX(1);
+      }
+
+      .prtflio-icon {
+        font-size: $icon-large;
+        transform: rotateY(360deg);
       }
     }
   }
@@ -57,16 +57,21 @@
     .#{$item}:hover {
       background-color: $color;
 
-      & .project-name:after {
+      .project-name:after {
         border-bottom-color: lighten($color, 25%);
+      }
+
+      .prtflio-icon {
+        color: lighten($color, 25%);
       }
     }
   }
 }
 
 .prtflio-icon {
-  display  : block;
-  font-size: $icon-medium;
+  display   : block;
+  font-size : $icon-medium;
+  transition: font-size .2s ease-out, transform .5s ease-out;
 }
 
 .prtflio-desc {
@@ -76,7 +81,6 @@
 
 .thumbnail {
   @include remCalc(5, margin, bottom );
-  transition: box-shadow .2s ease;
 }
 
 .project-name {

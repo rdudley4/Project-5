@@ -21,16 +21,10 @@
     flex: $flex-2col;
 
     &:hover {
-      background-color: $color-secondary;
       color           : $color-tertiary;
       border-radius   : $br;
 
-      .thumbnail {
-        box-shadow: $shdw-bottom-lrg;
-      }
-
       .prtflio-icon {
-        color                     : $color-primary;
         transition-timing-function: ease-out;
         transition-delay          : .2s;
       }
@@ -54,6 +48,19 @@
   // IE-DESKTOP - Fixes three column layout.
   @include query("ie-desktop") {
     flex: $flex-3col-ie;
+  }
+}
+
+// .portfolio-item:hover colors
+@include query("tablet") {
+  @each $item, $color in $hover-list {
+    .#{$item}:hover {
+      background-color: $color;
+
+      & .project-name:after {
+        border-bottom-color: lighten($color, 25%);
+      }
+    }
   }
 }
 

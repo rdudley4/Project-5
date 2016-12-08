@@ -13,12 +13,12 @@
   }
 }
 
-@mixin underline-effect($type: "default") {
+@mixin underline-effect($type: "portfolio") {
   &:after {
     @include remCalc(5, margin, top);
     display      : block;
     content      : '';
-    border-bottom: $border-default;
+    border-bottom: $border-current;
     transform    : scaleX(0);
     transition   : transform .3s ease-in-out .15s;
   }
@@ -26,7 +26,8 @@
   @if $type == "nav" {
     &:hover {
       &:after {
-        transform: scaleX(1);
+        border-bottom: $border-default;
+        transform    : scaleX(1);
       }
     }
   }

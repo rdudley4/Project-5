@@ -9,6 +9,14 @@ $fun-blue        : #2162af;
 $cinnabar        : #e44f26;
 $white           : #fff;
 
+$scooter         : #36acd0;
+$golden-grass    : #e0ab26;
+$jelly-bean      : #2572aa;
+$fountain-blue   : #52bab4;
+$dolphin         : #675a85;
+$nevada          : #62717e;
+$vin-rogue       : #903c53;
+
 // Functional Color Variables
 
 $color-primary   : $neptune;
@@ -22,6 +30,33 @@ $color-background: $alabaster;
 $color-css3      : $fun-blue;
 $color-html5     : $cinnabar;
 $color-js        : $fire-brush;
+
+$color-item1     : $scooter;
+$color-item2     : $golden-grass;
+$color-item3     : $jelly-bean;
+$color-item4     : $fountain-blue;
+$color-item5     : $dolphin;
+$color-item6     : $nevada;
+$color-item7     : $scooter;
+$color-item8     : $vin-rogue;
+$color-item9     : $scooter;
+$color-item10    : $dolphin;
+$color-item11    : $scooter;
+$color-item12    : $jelly-bean;
+
+// Portfolio Item Hover
+$hover-list: (item1, $color-item1),
+             (item2, $color-item2),
+             (item3, $color-item3),
+             (item4, $color-item4),
+             (item5, $color-item5),
+             (item6, $color-item6),
+             (item7, $color-item7),
+             (item8, $color-item8),
+             (item9, $color-item9),
+             (item10, $color-item10),
+             (item11, $color-item11),
+             (item12, $color-item12);
 
 // Font Stacks
 
@@ -38,8 +73,8 @@ $icon-large      : 3rem;    // 48px
 
 // Media Query Breakpoints
 
-$brk-tablet      : "(min-width: 768px)";
-$brk-desktop     : "(min-width: 1024px)";
+$brk-tablet      : "(min-width        : 768px)";
+$brk-desktop     : "(min-width        : 1024px)";
 $brk-ie          : "(-ms-high-contrast: none), (-ms-high-contrast: active)";
 
 // Flex Variables
@@ -62,11 +97,12 @@ $transition-color: color .25s ease-in;
 
 // Borders
 $border-drk-sm   : 1px solid $color-secondary;
-$border-default  : 2px solid $color-primary;
+$border-default  : 3px solid $color-primary;
+$border-current  : 3px solid;
 
 // Image Paths
 
-$path-img: "../img";
+$path-img        : "../img";
 
 // Max-width
-$mw: 1150px;
+$mw              : 1150px;

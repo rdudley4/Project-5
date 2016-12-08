@@ -18,15 +18,18 @@
     @include remCalc(5, margin, top);
     display      : block;
     content      : '';
-    border-bottom: $border-current;
+    border-bottom: $border-lrg;
     transform    : scaleX(0);
     transition   : transform .3s ease-in-out .15s;
   }
   
   @if $type == "nav" {
+    &:after {
+      border-bottom: $border-default;
+    }
+
     &:hover {
       &:after {
-        border-bottom: $border-default;
         transform    : scaleX(1);
       }
     }

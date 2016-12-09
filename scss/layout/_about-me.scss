@@ -14,8 +14,10 @@
 }
 
 #profile-photo {
-  width : 152.15px;
-  height: 210.8px;
+  width            : 152.15px;
+  height           : 210.8px;
+  -webkit-animation: grow 1s .25s backwards;
+  animation        : grow 1s .25s backwards;
  
   // TABLET
   @include query("tablet") {
@@ -50,3 +52,5 @@
     text-align   : left;
   }
 }
+
+
